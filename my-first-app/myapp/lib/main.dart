@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              ButtonIcon(),
+              ButtonIcon(),              
+              SizedBox(height: 50,), //ou  Container(height: 50),
               ButtonText()
             ],
           ),
