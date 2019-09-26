@@ -20,13 +20,17 @@ class MyApp extends StatelessWidget {
 class HomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 100,
-      child: Container(
-        width: 50,
-        height: 50,
-        color: Colors.blueAccent,
-      ),
+    return Center(
+        child: Container(
+          width: 300,
+          height: 50,
+          color: Colors.blueAccent,
+          alignment: Alignment.center,
+          child: Icon(
+            Icons.add_a_photo,
+            color: Colors.black
+          ),
+        ),
     );
   }
 }
