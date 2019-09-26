@@ -11,26 +11,31 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: HomeWidget(),
+        body: Column(
+          children: <Widget>[
+            Container(
+              height: 70,
+              width: double.infinity,
+              color: Colors.greenAccent
+            ),
+            Container(
+              height: 70,
+              width: double.infinity,
+              color: Colors.cyan
+            )
+          ],
+        ),
       ),
     );
   }
 }
 
-class HomeWidget extends StatelessWidget {
+class ButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
-          width: 300,
-          height: 50,
-          color: Colors.blueAccent,
-          alignment: Alignment.center,
-          child: Icon(
-            Icons.add_a_photo,
-            color: Colors.black
-          ),
-        ),
+    return Container(
+      width: 150,
+      height: 50,
     );
   }
 }
