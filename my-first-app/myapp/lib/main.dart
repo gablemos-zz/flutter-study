@@ -11,13 +11,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            ButtonIcon(),
-            ButtonText()
-          ],
+        body: Container(
+          color: Colors.yellow,
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              ButtonIcon(),
+              ButtonText()
+            ],
+          ),
         ),
       ),
     );
@@ -28,9 +32,10 @@ class ButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,//estica pela tela toda
+      //width: double.infinity,//estica pela tela toda
+      width: 300,
       height: 50,  
-      color: Colors.amberAccent,  
+      color: Colors.greenAccent,  
       child: Icon(
         Icons.add,
         color: Colors.black26,
