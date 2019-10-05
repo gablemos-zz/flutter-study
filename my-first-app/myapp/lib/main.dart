@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               ButtonIcon(icon: Icons.arrow_downward),              
               ButtonText(), 
-              // ButtonIcon(Icons.arrow_upward)
               ButtonIcon(icon: Icons.arrow_upward)
             ],
           ),
@@ -59,10 +58,12 @@ class ButtonText extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 30),
       child: Container(
-        transform: Matrix4.identity()..scale(0.5)..translate(150.0, 30.0),
+        decoration: BoxDecoration(
+          color: Colors.deepPurple,  
+          borderRadius: BorderRadius.circular(25.0)
+        ),
         width: double.infinity,
         height: 50,  
-        color: Colors.deepPurple,  
         alignment: Alignment.center,
         child: Text(
           "Toque aqui!",
