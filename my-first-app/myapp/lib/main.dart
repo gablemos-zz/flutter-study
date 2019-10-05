@@ -89,7 +89,7 @@ class ButtonTextIcon extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 30),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.greenAccent,
+            color: Colors.greenAccent,
             borderRadius: BorderRadius.circular(15.0),
             boxShadow: <BoxShadow>[
               BoxShadow(
@@ -102,14 +102,20 @@ class ButtonTextIcon extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Icon(
-              Icons.message,
-              color: Colors.black26,
+            Expanded(
+              flex: 1,
+              child: Icon(
+                Icons.message,
+                color: Colors.black26,
+              ),
             ),
-            SizedBox(width: 10,),
-            Text(
-              "Chat",
-              style: TextStyle(color: Colors.deepPurple, fontSize: 18),
+            Expanded(
+              flex: 3,
+              child: Text(
+                "Chat",
+                textAlign: TextAlign.left,
+                style: TextStyle(color: Colors.deepPurple, fontSize: 18),
+              ),
             ),
           ],
         ),
