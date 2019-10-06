@@ -14,14 +14,16 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
-          color: Colors.yellow,
+          color: Colors.black87,
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              // Image.asset("assets/gabriel-logo.png"),
+              Image.network("https://thebaseballcodes.files.wordpress.com/2012/06/stony-brook-logo.gif"),
               ButtonTextIcon(
-                color: Colors.red,
+                color: Colors.redAccent,
                 text: "Login Google",
                 iconData: Icons.email,
               ),
