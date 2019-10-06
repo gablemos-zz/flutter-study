@@ -51,6 +51,10 @@ flutter:
    - assets/rafa-logo.png
    - assets/gabriel-logo.png
    - assets/gabriel-logo2.png
+   - assets/bg1.jpg
+   - assets/bg2.jpg
+   - assets/bg3.jpg
+   - assets/bg4.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

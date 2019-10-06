@@ -14,14 +14,19 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
-          color: Colors.black87,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/bg1.jpg"),
+              fit: BoxFit.cover
+            )
+          ),
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              // Image.asset("assets/gabriel-logo.png"),
-              Image.network("https://thebaseballcodes.files.wordpress.com/2012/06/stony-brook-logo.gif"),
+              Image.asset("assets/gabriel-logo.png"),
+              // Image.network("https://thebaseballcodes.files.wordpress.com/2012/06/stony-brook-logo.gif"),
               ButtonTextIcon(
                 color: Colors.redAccent,
                 text: "Login Google",
