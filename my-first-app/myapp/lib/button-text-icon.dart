@@ -39,7 +39,7 @@ final IconData iconData;
               child: Text(
                 text,
                 textAlign: TextAlign.left,
-                style: TextStyle(color: Colors.deepPurple, fontSize: 18),
+                style: TextStyle(color: Colors.white, fontSize: 18),
               ),
             ),
           ],
