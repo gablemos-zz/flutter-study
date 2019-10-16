@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeWidget extends StatelessWidget {
+class Aula35 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
