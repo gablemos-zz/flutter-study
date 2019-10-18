@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/secao6/aula38.dart';
 
 class Aula36 extends StatelessWidget {
   @override
@@ -17,22 +18,13 @@ class Aula36 extends StatelessWidget {
 
           SizedBox(height: 50,),
 
-          Container(
-            height: 40,
-            width: 40,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              color: Colors.blueAccent,
-              borderRadius: BorderRadius.circular(40)
-            ),
+          CustomCircleAvatar(
+            backgroundcolor: Colors.blue,
             child: Text(
               "G",
-              style: TextStyle(
-                color: Colors.white
-              ),
-            ),
+              style: TextStyle(color: Colors.white),
+            ),            
           )
-
         ],
       ),
     );
