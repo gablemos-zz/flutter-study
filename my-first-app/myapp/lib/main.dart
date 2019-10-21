@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/secao6/aula36.dart';
+import 'package:myapp/secao7/Aula39.dart';
 
 
 void main() => runApp(MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: Aula36()
+        appBar: AppBar(),
+        body: Aula39()
       ),
     );
   }

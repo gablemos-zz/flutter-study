@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:myapp/secao5/button-text-icon.dart';
 
 class Secao5Login extends StatelessWidget {
@@ -20,12 +20,12 @@ class Secao5Login extends StatelessWidget {
           ButtonTextIcon(
             color: Colors.redAccent,
             text: "Login Google",
-            // iconData: FontAwesomeIcons.google,
+            iconData: FontAwesomeIcons.google,
           ),
           ButtonTextIcon(
             color: Colors.blue,
             text: "Login Facebook",
-            // iconData: FontAwesomeIcons.facebook,
+            iconData: FontAwesomeIcons.facebook,
           ),
           SizedBox(
             height: 30,
